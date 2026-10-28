@@ -1,0 +1,69 @@
+[
+  {
+    "id": "ISSUE-JP-001",
+    "type": "REGULATORY_WARNING_OMISSION",
+    "severity": "CRITICAL",
+    "severityColor": "red",
+    "title": "Missing Mandatory Japanese Warning: '再滅菌禁止' (Do Not Re-sterilize)",
+    "market": "Japan",
+    "productCode": "CS-100",
+    "affectedLabels": [
+      "LBL-CS100-JP-P09 (Primary Pouch)",
+      "LBL-CS100-JP-C10 (Secondary Carton)"
+    ],
+    "regulationReference": "PMD Act / MHLW Ordinance No. 169 Article 63-2; PMDA Notification Yakushokuhatsu 0219-4",
+    "description": "Japanese medical device labeling law explicitly prohibits single-use Class IV/IV equivalent cardiovascular implants without the exact Kanji text '再滅菌禁止' printed in a minimum font size of 7pt adjacent to the sterilization symbol.",
+    "currentContent": "滅菌済 (ガンマ線照射) [Sterilized with Gamma] - Warning text in Japanese omitted or untranslated from English.",
+    "requiredContent": "【警告】再滅菌禁止。本品は単回使用であり、再滅菌及び再使用は厳重に禁じられています。",
+    "status": "BLOCKED",
+    "actionRequired": "Inject required Japanese cautionary block into primary pouch artwork layer and carton text zone prior to MAH regulatory submission."
+  },
+  {
+    "id": "ISSUE-UDI-002",
+    "type": "BARCODE_DATA_INTEGRITY_MISMATCH",
+    "severity": "CRITICAL",
+    "severityColor": "red",
+    "title": "UDI / Barcode Data Mismatch: GS1 AI(17) Expiry Date Syntax",
+    "market": "Japan / US Global Sync",
+    "productCode": "CS-100",
+    "affectedLabels": [
+      "LBL-CS100-JP-C10 (Secondary Carton)"
+    ],
+    "regulationReference": "GS1 General Specifications Section 3.4.1 & FDA 21 CFR 830.20 / PMDA J-UDI Standard",
+    "description": "The 2D DataMatrix barcode encodes Application Identifier (17) expiration date as '290831' (2029-08-31), but the human-readable text printed next to the hourglass symbol reads 'EXP: 2029-09-30'. An optical scan failure and audit finding will trigger customs quarantine.",
+    "currentContent": "2D DataMatrix AI(17): 290831 | Human Readable Text: EXP: 2029-09-30 (1-month discrepancy)",
+    "requiredContent": "Align human readable text and AI(17) encoding to exact ISO standard date: 2029-08-31 [YYMMDD: 290831]",
+    "status": "BLOCKED",
+    "actionRequired": "Regenerate GS1 DataMatrix artwork SVG and sync with Master UDI Registry entry."
+  },
+  {
+    "id": "ISSUE-SYM-003",
+    "type": "SYMBOL_STANDARD_OBSOLESCENCE",
+    "severity": "WARNING",
+    "severityColor": "amber",
+    "title": "Required Symbol Update: ISO 15223-1 Sterilization Method Transition",
+    "market": "US, EU, Japan (Global 12 Labels)",
+    "productCode": "CS-100",
+    "affectedLabels": [
+      "LBL-CS100-US-P01",
+      "LBL-CS100-US-C02",
+      "LBL-CS100-US-S03",
+      "LBL-CS100-US-I04",
+      "LBL-CS100-EU-P05",
+      "LBL-CS100-EU-C06",
+      "LBL-CS100-EU-S07",
+      "LBL-CS100-EU-I08",
+      "LBL-CS100-JP-P09",
+      "LBL-CS100-JP-C10",
+      "LBL-CS100-JP-S11",
+      "LBL-CS100-JP-I12"
+    ],
+    "regulationReference": "ISO 15223-1:2021 Clause 5.2.3 vs 5.2.4 & EU MDR Annex I Chapter III §23.2",
+    "description": "ECO-2026-089 changes the terminal sterilization process from Ethylene Oxide to Gamma Radiation. The current artwork across all 12 packaging components utilizes ISO Symbol 5.2.3 [STERILE EO]. ISO 15223-1 mandates the use of Symbol 5.2.4 [STERILE R].",
+    "currentContent": "Symbol ISO 15223-1 Clause 5.2.3 [STERILE | EO]",
+    "requiredContent": "Symbol ISO 15223-1 Clause 5.2.4 [STERILE | R]",
+    "status": "REVIEW_REQUIRED",
+    "actionRequired": "Batch update artwork symbol components across all 12 primary, secondary, shipper, and IFU master files."
+  }
+]
+

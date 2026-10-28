@@ -1,0 +1,106 @@
+[
+  {
+    "id": "SYM-5.2.3",
+    "standard": "ISO 15223-1:2021",
+    "clause": "5.2.3",
+    "name": "Sterilized using ethylene oxide",
+    "code": "STERILE EO",
+    "svgShape": "rect-text",
+    "description": "Indicates a medical device that has been sterilized using ethylene oxide gas.",
+    "category": "Sterilization",
+    "deprecatedForCS100": true,
+    "replacementSymbol": "SYM-5.2.4"
+  },
+  {
+    "id": "SYM-5.2.4",
+    "standard": "ISO 15223-1:2021",
+    "clause": "5.2.4",
+    "name": "Sterilized using irradiation",
+    "code": "STERILE R",
+    "svgShape": "rect-text",
+    "description": "Indicates a medical device that has been sterilized using ionizing radiation (e.g., Gamma radiation or E-beam).",
+    "category": "Sterilization",
+    "requiredForECO": true
+  },
+  {
+    "id": "SYM-5.4.2",
+    "standard": "ISO 15223-1:2021",
+    "clause": "5.4.2",
+    "name": "Do not re-use",
+    "code": "DO NOT RE-USE",
+    "svgShape": "number-2-strike",
+    "description": "Indicates a medical device intended for single use or on a single patient during a single procedure.",
+    "category": "Safety"
+  },
+  {
+    "id": "SYM-5.4.3",
+    "standard": "ISO 15223-1:2021",
+    "clause": "5.4.3",
+    "name": "Consult instructions for use",
+    "code": "CONSULT IFU",
+    "svgShape": "book-info",
+    "description": "Indicates the need for the user to consult the instructions for use for important cautionary info.",
+    "category": "Information"
+  },
+  {
+    "id": "SYM-5.1.1",
+    "standard": "ISO 15223-1:2021",
+    "clause": "5.1.1",
+    "name": "Manufacturer",
+    "code": "MANUFACTURER",
+    "svgShape": "factory",
+    "description": "Indicates the medical device manufacturer, as defined in EU Directives and MDR.",
+    "category": "Identification"
+  },
+  {
+    "id": "SYM-5.1.3",
+    "standard": "ISO 15223-1:2021",
+    "clause": "5.1.3",
+    "name": "Date of manufacture",
+    "code": "MFG DATE",
+    "svgShape": "calendar",
+    "description": "Indicates the date when the device was manufactured.",
+    "category": "Identification"
+  },
+  {
+    "id": "SYM-5.1.4",
+    "standard": "ISO 15223-1:2021",
+    "clause": "5.1.4",
+    "name": "Use-by date",
+    "code": "EXP DATE",
+    "svgShape": "hourglass",
+    "description": "Indicates the date after which the medical device is not to be used.",
+    "category": "Identification"
+  },
+  {
+    "id": "SYM-5.7.7",
+    "standard": "ISO 15223-1:2021",
+    "clause": "5.7.7",
+    "name": "Medical device",
+    "code": "MD",
+    "svgShape": "md-box",
+    "description": "Indicates that the item is an approved medical device under EU MDR 2017/745.",
+    "category": "Regulatory"
+  },
+  {
+    "id": "SYM-CE-0123",
+    "standard": "EU MDR 2017/745",
+    "clause": "Article 20",
+    "name": "CE Marking of Conformity (TÜV SÜD)",
+    "code": "CE 0123",
+    "svgShape": "ce-logo",
+    "description": "Conformity assessment with Notified Body TÜV SÜD Product Service GmbH (0123).",
+    "category": "Regulatory"
+  },
+  {
+    "id": "SYM-RX-ONLY",
+    "standard": "FDA 21 CFR 801.109",
+    "clause": "Section b.1",
+    "name": "Prescription Only Device",
+    "code": "Rx Only",
+    "svgShape": "rx-badge",
+    "description": "Caution: Federal law restricts this device to sale by or on the order of a physician.",
+    "category": "Regulatory"
+  }
+]
+

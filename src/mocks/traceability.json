@@ -1,0 +1,89 @@
+{
+  "product": "Cardiac Stent CS-100",
+  "changeOrder": "ECO-2026-089",
+  "nodes": [
+    {
+      "id": "NODE-REQ-01",
+      "type": "REQUIREMENT",
+      "code": "PRD-MED-409",
+      "title": "Radiation Sterilization Bioburden Validation",
+      "standard": "ISO 11137-1:2006/Amd 2:2018",
+      "status": "APPROVED"
+    },
+    {
+      "id": "NODE-SPEC-02",
+      "type": "DESIGN_OUTPUT",
+      "code": "SPEC-LBL-CS100-REV2",
+      "title": "Packaging Artwork & Material Specification (Tyvek 1073B + PET/Alu)",
+      "standard": "ISO 11607-1:2019",
+      "status": "APPROVED"
+    },
+    {
+      "id": "NODE-UDI-03",
+      "type": "UDI_RECORD",
+      "code": "UDI-00850012345678",
+      "title": "Master Primary DI Entry",
+      "standard": "GS1 / GUDID / EUDAMED Basic UDI",
+      "status": "SYNCED"
+    },
+    {
+      "id": "NODE-LBL-US",
+      "type": "LABEL_ARTWORK",
+      "code": "LBL-CS100-US-P01",
+      "title": "US Tyvek Pouch Label (STERILE R)",
+      "standard": "FDA 21 CFR 801",
+      "status": "PENDING_RELEASE"
+    },
+    {
+      "id": "NODE-LBL-EU",
+      "type": "LABEL_ARTWORK",
+      "code": "LBL-CS100-EU-P05",
+      "title": "EU Tyvek Pouch Label (CE 0123 + STERILE R)",
+      "standard": "EU MDR 2017/745",
+      "status": "PENDING_RELEASE"
+    },
+    {
+      "id": "NODE-LBL-JP",
+      "type": "LABEL_ARTWORK",
+      "code": "LBL-CS100-JP-P09",
+      "title": "Japan Primary Pouch Label (Kanji + STERILE R)",
+      "standard": "PMD Act MHLW 169",
+      "status": "BLOCKED"
+    },
+    {
+      "id": "NODE-REG-FDA",
+      "type": "REGULATORY_FILING",
+      "code": "PMA-P980045/S042",
+      "title": "FDA 30-Day Notice / Sterilization Change Supplement",
+      "standard": "21 CFR 814.39",
+      "status": "READY_TO_SUBMIT"
+    },
+    {
+      "id": "NODE-REG-EUDAMED",
+      "type": "REGULATORY_FILING",
+      "code": "EUDAMED-UDI-2026-CS100",
+      "title": "EUDAMED Device Identifier Notification Update",
+      "standard": "MDR Article 29",
+      "status": "READY_TO_SUBMIT"
+    },
+    {
+      "id": "NODE-REG-PMDA",
+      "type": "REGULATORY_FILING",
+      "code": "PMDA-APPR-2026-9921",
+      "title": "Japan Minor Change Notification (軽微変更届)",
+      "standard": "MHLW Ordinance 169",
+      "status": "HOLD_COMPLIANCE_FIX"
+    }
+  ],
+  "links": [
+    { "source": "NODE-REQ-01", "target": "NODE-SPEC-02", "relation": "SPECIFIES" },
+    { "source": "NODE-SPEC-02", "target": "NODE-UDI-03", "relation": "INCORPORATES" },
+    { "source": "NODE-UDI-03", "target": "NODE-LBL-US", "relation": "APPLIED_TO" },
+    { "source": "NODE-UDI-03", "target": "NODE-LBL-EU", "relation": "APPLIED_TO" },
+    { "source": "NODE-UDI-03", "target": "NODE-LBL-JP", "relation": "APPLIED_TO" },
+    { "source": "NODE-LBL-US", "target": "NODE-REG-FDA", "relation": "SUBMITTED_UNDER" },
+    { "source": "NODE-LBL-EU", "target": "NODE-REG-EUDAMED", "relation": "SUBMITTED_UNDER" },
+    { "source": "NODE-LBL-JP", "target": "NODE-REG-PMDA", "relation": "SUBMITTED_UNDER" }
+  ]
+}
+

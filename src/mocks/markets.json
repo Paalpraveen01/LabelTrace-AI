@@ -1,0 +1,73 @@
+[
+  {
+    "id": "MKT-US",
+    "name": "United States",
+    "regionCode": "US",
+    "authority": "US FDA (Center for Devices and Radiological Health)",
+    "regulation": "21 CFR Part 801 (Medical Device Labeling) & Part 830 (UDI System)",
+    "udiDatabase": "AccessGUDID",
+    "primaryLanguage": "English",
+    "acceptedLanguages": ["English", "Spanish (optional)"],
+    "udiFormat": "GS1-128 / GS1 DataMatrix (01) Primary DI + (17) Expiry + (10) Lot + (21) Serial",
+    "specialDirectives": [
+      "Rx Only statement mandatory on primary container & carton",
+      "Sterilization method must match Premarket Notification 510(k) or PMA approval",
+      "Single-use caution symbol ISO 15223-1 #5.4.2"
+    ],
+    "active": true
+  },
+  {
+    "id": "MKT-EU",
+    "name": "European Union",
+    "regionCode": "EU",
+    "authority": "European Medicines Agency (EMA) / Notified Body (TÜV SÜD 0123)",
+    "regulation": "EU MDR 2017/745 Annex I, Chapter III (Requirements regarding device information)",
+    "udiDatabase": "EUDAMED",
+    "primaryLanguage": "English / German / French",
+    "acceptedLanguages": ["English", "German", "French", "Italian", "Spanish", "Dutch"],
+    "udiFormat": "Basic UDI-DI + GS1 DataMatrix 2D on all packaging levels",
+    "specialDirectives": [
+      "CE Mark with 4-digit Notified Body number (CE 0123)",
+      "Authorized Representative (EC REP) name & address required",
+      "Sterilization method symbol ISO 15223-1 mandatory",
+      "Medical Device Symbol (MD) ISO 15223-1 #5.7.7 required"
+    ],
+    "active": true
+  },
+  {
+    "id": "MKT-JP",
+    "name": "Japan",
+    "regionCode": "Japan",
+    "authority": "PMDA / MHLW (Ministry of Health, Labour and Welfare)",
+    "regulation": "PMD Act (Act on Securing Quality, Efficacy and Safety of Products)",
+    "udiDatabase": "J-UDI / MHLW Medical Device Database",
+    "primaryLanguage": "Japanese",
+    "acceptedLanguages": ["Japanese (Mandatory for clinical use)"],
+    "udiFormat": "GS1-128 or GS1 DataMatrix with JAN/EAN compatibility",
+    "specialDirectives": [
+      "Mandatory Kanji caution text: 再滅菌禁止 (Do Not Re-sterilize)",
+      "Marketing Authorization Holder (MAH / 製造販売業者) full Japanese address",
+      "Japanese Medical Device Approval Number (承認番号) must be prominent",
+      "Strict prohibition of mismatched shelf-life notation (YYYY-MM-DD format)"
+    ],
+    "active": true
+  },
+  {
+    "id": "MKT-ME",
+    "name": "Middle East",
+    "regionCode": "Middle East",
+    "authority": "Saudi FDA (SFDA) / UAE MOHAP",
+    "regulation": "SFDA MDS-REQ 1 (Medical Device Requirements) & UAE Medical Device Guidelines",
+    "udiDatabase": "SFDA Medical Device National Registry (MDNR / DIWAN)",
+    "primaryLanguage": "Arabic",
+    "acceptedLanguages": ["Arabic (Mandatory bilingual with English)", "English"],
+    "udiFormat": "GS1 DataMatrix + Arabic human-readable text",
+    "specialDirectives": [
+      "Bilingual Arabic-English outer carton and Instructions For Use (IFU)",
+      "Authorized Local Representative license number and registration barcode",
+      "Halal / Biocompatibility confirmation where applicable"
+    ],
+    "active": true
+  }
+]
+

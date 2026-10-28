@@ -1,0 +1,81 @@
+{
+  "labelId": "LBL-CS100-JP-C10",
+  "labelName": "Cardiac Stent CS-100 Secondary Carton (Japan)",
+  "versionBefore": "v1.0 (Production / Released)",
+  "versionAfter": "v2.0 (Draft / AI Staged)",
+  "diffSummary": {
+    "totalChanges": 3,
+    "criticalIssues": 2,
+    "warnings": 1,
+    "pixelDiffPercentage": "14.8%"
+  },
+  "changes": [
+    {
+      "id": "DIFF-01",
+      "category": "BARCODE_CHANGE",
+      "title": "Changed Barcode (GS1 DataMatrix Matrix & Human Readable AI Encoding)",
+      "type": "changed barcode",
+      "severity": "CRITICAL",
+      "severityColor": "red",
+      "boundingBox": { "x": 68, "y": 70, "width": 26, "height": 22 },
+      "before": {
+        "text": "(01)04987012345678 (17)290930 (10)LOT-2026A",
+        "humanReadable": "EXP: 2029-09-30 (Erroneous)",
+        "barcodeSvgType": "datamatrix-legacy",
+        "description": "Legacy 2D barcode with mismatched 2029-09-30 expiration date"
+      },
+      "after": {
+        "text": "(01)04987012345678 (17)290831 (10)LOT-2026A",
+        "humanReadable": "EXP: 2029-08-31 (Corrected to Master ERP)",
+        "barcodeSvgType": "datamatrix-corrected",
+        "description": "Corrected GS1 DataMatrix 2D symbol with synchronized AI(17) date format"
+      },
+      "validationNote": "Automated vision check detected barcode dot matrix re-generation and parity check pass."
+    },
+    {
+      "id": "DIFF-02",
+      "category": "SYMBOL_CHANGE",
+      "title": "Missing Symbol & Symbol Replacement (STERILE EO -> STERILE R)",
+      "type": "missing symbol",
+      "severity": "CRITICAL",
+      "severityColor": "red",
+      "boundingBox": { "x": 18, "y": 42, "width": 30, "height": 18 },
+      "before": {
+        "symbolCode": "STERILE EO",
+        "symbolStandard": "ISO 15223-1 #5.2.3",
+        "presence": "Present (Outdated)",
+        "description": "Ethylene Oxide sterilization rectangle symbol"
+      },
+      "after": {
+        "symbolCode": "STERILE R",
+        "symbolStandard": "ISO 15223-1 #5.2.4",
+        "presence": "Replaced / Injected",
+        "description": "Ionizing Radiation sterilization symbol with updated line weight"
+      },
+      "validationNote": "STERILE EO removed. STERILE R verified against ISO SVG template library."
+    },
+    {
+      "id": "DIFF-03",
+      "category": "LAYOUT_SHIFT",
+      "title": "Layout Shift & Kanji Caution Text Block Insertion",
+      "type": "layout shift",
+      "severity": "WARNING",
+      "severityColor": "amber",
+      "boundingBox": { "x": 10, "y": 62, "width": 55, "height": 30 },
+      "before": {
+        "layoutState": "Spacious margin with blank footer area (no Japanese warning text)",
+        "fontSize": "N/A",
+        "textBlocks": 4,
+        "description": "Negative space without PMDA warning box"
+      },
+      "after": {
+        "layoutState": "Shifted manufacturer info 8mm upward to accommodate 7pt Kanji caution text",
+        "fontSize": "7.5pt Hiragino Kaku Gothic",
+        "textBlocks": 5,
+        "description": "Added '再滅菌禁止 (Do not re-sterilize)' framed warning banner with 2mm safety bleed"
+      },
+      "validationNote": "Layout shift: elements moved -8.4mm Y-axis. Margin clearance meets minimum 3.0mm die-cut tolerance."
+    }
+  ]
+}
+

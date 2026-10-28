@@ -1,0 +1,86 @@
+{
+  "changeOrderId": "ECO-2026-089",
+  "title": "Sterilization Process Modernization: Ethylene Oxide to Gamma Radiation for CS-100",
+  "product": "Cardiac Stent CS-100 (Global)",
+  "currentStatus": "REGULATORY_REVIEW",
+  "workflowSteps": [
+    {
+      "step": "DRAFT",
+      "name": "ECO Formulation & Draft Generation",
+      "status": "COMPLETED",
+      "owner": "Sarah Jenkins (Packaging Engineer)",
+      "timestamp": "2026-10-24 09:15:22 UTC",
+      "comments": "Draft generated from ECO-2026-089 sterilization engineering change matrix.",
+      "signature": "SHA256:d8a9e71b...89c0 [VALIDATED]"
+    },
+    {
+      "step": "AI_VALIDATED",
+      "name": "LabelTrace AI Autonomous Pre-Check",
+      "status": "COMPLETED",
+      "owner": "LabelTrace AI Safety Engine v4.2",
+      "timestamp": "2026-10-24 09:16:04 UTC",
+      "comments": "12 affected labels analyzed. 2 Critical Blocking Issues identified (Missing JP Warning, UDI Barcode Mismatch). Staged fixes proposed.",
+      "signature": "AGENT-CERT:LT-AI-99214 [PASS WITH CAUTIONS]"
+    },
+    {
+      "step": "REGULATORY_REVIEW",
+      "name": "Global Regulatory Affairs Review",
+      "status": "IN_PROGRESS",
+      "owner": "Dr. Marcus Vance (VP Regulatory Affairs)",
+      "timestamp": "2026-10-25 14:30:00 UTC",
+      "comments": "Reviewing PMDA MHLW Ordinance 169 warning placement and FDA 510(k) sterilization change assessment. Pending resolution of Japanese warning text.",
+      "signature": "Pending Digital Signature (21 CFR Part 11)"
+    },
+    {
+      "step": "QA_REVIEW",
+      "name": "Quality Assurance & Compliance Signoff",
+      "status": "PENDING",
+      "owner": "Elena Rostova (Quality Assurance Director)",
+      "timestamp": null,
+      "comments": "Awaiting Regulatory signoff before barcode symbology verification and ISO 15223-1 check.",
+      "signature": null
+    },
+    {
+      "step": "MANUFACTURING_REVIEW",
+      "name": "Manufacturing & Packaging Operations",
+      "status": "PENDING",
+      "owner": "Kenji Sato (Lead Packaging Line Ops, Osaka)",
+      "timestamp": null,
+      "comments": "Line tooling check for Tyvek heat seal temperature and gamma indicator sticker integration.",
+      "signature": null
+    },
+    {
+      "step": "RELEASED",
+      "name": "Final Electronic DHF Release / BLOCKED Gate",
+      "status": "GATE_DECISION",
+      "owner": "Executive Quality Board",
+      "timestamp": null,
+      "comments": "Final gate: If any unresolved critical flags exist, state shifts to BLOCKED. When all signoffs complete, changes push to ERP/EUDAMED/GUDID as RELEASED.",
+      "signature": null
+    }
+  ],
+  "history": [
+    {
+      "action": "Change Order Initialized",
+      "by": "Sarah Jenkins",
+      "role": "Packaging Engineer",
+      "date": "2026-10-24 09:15:22",
+      "status": "DRAFT"
+    },
+    {
+      "action": "Automated Rule Engine Scan Complete",
+      "by": "LabelTrace AI",
+      "role": "Autonomous System",
+      "date": "2026-10-24 09:16:04",
+      "status": "AI_VALIDATED"
+    },
+    {
+      "action": "Regulatory Review Commenced",
+      "by": "Dr. Marcus Vance",
+      "role": "VP Regulatory Affairs",
+      "date": "2026-10-25 14:30:00",
+      "status": "REGULATORY_REVIEW"
+    }
+  ]
+}
+

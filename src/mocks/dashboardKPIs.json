@@ -1,0 +1,66 @@
+{
+  "summary": {
+    "totalLabelsInSystem": 36,
+    "activeECO": "ECO-2026-089",
+    "affectedLabelsCurrentECO": 12,
+    "complianceRate": "83.3%",
+    "complianceRateStatus": "warning",
+    "criticalBlockingIssues": 2,
+    "warningIssues": 1,
+    "approvalWorkflowStage": "REGULATORY_REVIEW",
+    "aiValidationSpeed": "4.2 sec",
+    "cycleTimeReduction": "88% vs Manual Inspection",
+    "lastAuditSync": "2026-10-28 14:45 UTC"
+  },
+  "metrics": [
+    {
+      "id": "kpi-compliance",
+      "label": "Label Compliance Score",
+      "value": "83.3%",
+      "change": "-16.7%",
+      "changeType": "negative",
+      "subtitle": "2 critical flags on Japan packaging",
+      "statusColor": "amber"
+    },
+    {
+      "id": "kpi-impacted",
+      "label": "Labels Affected by ECO",
+      "value": "12 of 16",
+      "change": "75% of CS-100 SKUs",
+      "changeType": "neutral",
+      "subtitle": "US, EU & Japan packaging tiers",
+      "statusColor": "blue"
+    },
+    {
+      "id": "kpi-blockers",
+      "label": "Audit & Recall Blockers",
+      "value": "2 Issues",
+      "change": "Blocked pre-print",
+      "changeType": "critical",
+      "subtitle": "1 Missing JP Warning, 1 Barcode Mismatch",
+      "statusColor": "red"
+    },
+    {
+      "id": "kpi-velocity",
+      "label": "Change Cycle Velocity",
+      "value": "4.2 Hours",
+      "change": "Down from 38 Days",
+      "changeType": "positive",
+      "subtitle": "AI automated impact & diff staging",
+      "statusColor": "green"
+    }
+  ],
+  "regionalBreakdown": [
+    { "region": "United States (FDA)", "totalLabels": 4, "status": "Ready for Signoff", "color": "blue" },
+    { "region": "European Union (MDR)", "totalLabels": 4, "status": "Ready for Signoff", "color": "blue" },
+    { "region": "Japan (PMDA)", "totalLabels": 4, "status": "Action Required (2 Blockers)", "color": "red" },
+    { "region": "Middle East (SFDA)", "totalLabels": 0, "status": "Not in ECO scope", "color": "gray" }
+  ],
+  "recentActivities": [
+    { "id": 1, "time": "12m ago", "title": "Sterilization simulation ran for CS-100", "actor": "LabelTrace AI Copilot", "type": "ai" },
+    { "id": 2, "time": "45m ago", "title": "PMDA Kanji warning flagged as missing", "actor": "Rule Engine v4.8", "type": "alert" },
+    { "id": 3, "time": "2h ago", "title": "GS1-128 barcode mismatch identified on JP carton", "actor": "Vision QA Engine", "type": "alert" },
+    { "id": 4, "time": "1d ago", "title": "ECO-2026-089 submitted by Sarah Jenkins", "actor": "Sarah Jenkins", "type": "user" }
+  ]
+}
+

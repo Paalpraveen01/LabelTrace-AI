@@ -1,0 +1,75 @@
+[
+  {
+    "id": "PROD-CS-100",
+    "code": "CS-100",
+    "name": "Cardiac Stent CS-100",
+    "description": "Drug-eluting coronary stent system mounted on a rapid exchange balloon catheter",
+    "category": "Cardiovascular Implants",
+    "deviceClass": "Class III (FDA / EU MDR)",
+    "currentSterilization": "Ethylene Oxide (EO)",
+    "proposedSterilization": "Gamma Radiation (R)",
+    "riskLevel": "High",
+    "material": "Cobalt-Chromium (L605) + Sirolimus polymer matrix",
+    "shelfLifeMonths": 36,
+    "storageConditions": "15°C to 30°C (59°F to 86°F), protect from direct light & moisture",
+    "globalDIs": {
+      "US": "(01)00850012345678",
+      "EU": "(01)00850012345678",
+      "Japan": "(01)04987012345678",
+      "MiddleEast": "(01)00850012345678"
+    },
+    "activeMarkets": ["US", "EU", "Japan", "Middle East"],
+    "totalLabels": 16,
+    "lastAuditDate": "2026-09-14",
+    "lifecycleStatus": "Active / ECO Under Evaluation"
+  },
+  {
+    "id": "PROD-SI-200",
+    "code": "SI-200",
+    "name": "Surgical Instrument SI-200",
+    "description": "Ergonomic micro-dissection curved scissors with tungsten carbide inserts",
+    "category": "Surgical Tools",
+    "deviceClass": "Class IIa (EU MDR) / Class I Exempt (FDA)",
+    "currentSterilization": "Steam Autoclave (Moist Heat)",
+    "proposedSterilization": "Steam Autoclave (Moist Heat)",
+    "riskLevel": "Medium",
+    "material": "Medical Grade Martensitic Stainless Steel 420B",
+    "shelfLifeMonths": 60,
+    "storageConditions": "Ambient temperature (10°C to 40°C), dry environment",
+    "globalDIs": {
+      "US": "(01)00850023456789",
+      "EU": "(01)00850023456789",
+      "Japan": "(01)04987023456789",
+      "MiddleEast": "(01)00850023456789"
+    },
+    "activeMarkets": ["US", "EU", "Middle East"],
+    "totalLabels": 8,
+    "lastAuditDate": "2026-07-22",
+    "lifecycleStatus": "Active"
+  },
+  {
+    "id": "PROD-OI-300",
+    "code": "OI-300",
+    "name": "Orthopedic Implant OI-300",
+    "description": "Modular porous-coated femoral stem for primary cementless total hip arthroplasty",
+    "category": "Orthopedics & Joint Reconstruction",
+    "deviceClass": "Class IIb (EU MDR) / Class III (FDA)",
+    "currentSterilization": "Gamma Radiation (R)",
+    "proposedSterilization": "Gamma Radiation (R)",
+    "riskLevel": "High",
+    "material": "Titanium Alloy Ti-6Al-4V ELI (ISO 5832-3)",
+    "shelfLifeMonths": 60,
+    "storageConditions": "Store in original protective sterile barrier packaging at dry room temperature",
+    "globalDIs": {
+      "US": "(01)00850034567890",
+      "EU": "(01)00850034567890",
+      "Japan": "(01)04987034567890",
+      "MiddleEast": "(01)00850034567890"
+    },
+    "activeMarkets": ["US", "EU", "Japan", "Middle East"],
+    "totalLabels": 12,
+    "lastAuditDate": "2026-08-30",
+    "lifecycleStatus": "Active"
+  }
+]
+

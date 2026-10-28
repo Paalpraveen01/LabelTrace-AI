@@ -1,0 +1,73 @@
+{
+  "packageId": "AUDIT-PKG-2026-ECO089",
+  "title": "21 CFR Part 11 & EU MDR Article 10 Compliant Audit Package",
+  "generatedAt": "2026-10-28T14:45:00Z",
+  "generatedBy": "System Auditor (LabelTrace AI Cryptographic Ledger)",
+  "scope": {
+    "product": "Cardiac Stent CS-100",
+    "ecoNumber": "ECO-2026-089",
+    "markets": ["US", "EU", "Japan"],
+    "totalAffectedLabels": 12,
+    "hashAlgorithm": "SHA-256",
+    "systemIntegrityHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "regulatoryComplianceStatement": "This record package adheres strictly to US FDA Title 21 CFR Part 11 for electronic records and signatures, Annex 11 EU GMP, and PMDA ministerial regulations.",
+  "events": [
+    {
+      "id": "AUD-001",
+      "timestamp": "2026-10-24 09:12:00 UTC",
+      "user": "sjenkins@cardio-med.com",
+      "role": "Lead Packaging Engineer",
+      "action": "INITIATE_CHANGE_ORDER",
+      "target": "ECO-2026-089",
+      "details": "Initiated change order to migrate sterilization method from EO to Gamma Radiation across CS-100 product line.",
+      "ipAddress": "192.168.10.45",
+      "checksum": "a8fbc7214e91"
+    },
+    {
+      "id": "AUD-002",
+      "timestamp": "2026-10-24 09:15:10 UTC",
+      "user": "AI_COPILOT_AGENT",
+      "role": "LabelTrace AI Safety Engine",
+      "action": "AUTOMATED_IMPACT_SIMULATION",
+      "target": "ALL_GLOBAL_LABELS",
+      "details": "Identified 12 directly impacted labels across US, EU, and Japan. Computed 100% symbol substitution required (STERILE EO -> STERILE R).",
+      "ipAddress": "127.0.0.1 (Local Verified Worker)",
+      "checksum": "c9281e04a11b"
+    },
+    {
+      "id": "AUD-003",
+      "timestamp": "2026-10-24 09:16:04 UTC",
+      "user": "AI_COPILOT_AGENT",
+      "role": "Compliance Validator Rule v4.8",
+      "action": "FLAG_CRITICAL_NON_CONFORMANCE",
+      "target": "LBL-CS100-JP-P09 & LBL-CS100-JP-C10",
+      "details": "Flagged non-conformance: Japanese PMD Act Kanji warning omission '再滅菌禁止' and Secondary Carton GS1-128 expiration date mismatch (AI 17: 290831 vs text: 2029-09-30).",
+      "ipAddress": "127.0.0.1 (Local Verified Worker)",
+      "checksum": "f01742de88a3"
+    },
+    {
+      "id": "AUD-004",
+      "timestamp": "2026-10-25 14:30:00 UTC",
+      "user": "mvance@cardio-med.com",
+      "role": "VP Regulatory Affairs",
+      "action": "REGULATORY_TRIAGE_HOLD",
+      "target": "ECO-2026-089 Workflow Gate",
+      "details": "Placed workflow stage on REGULATORY_REVIEW hold pending injection of Japanese warning block and barcode reconciliation.",
+      "ipAddress": "10.0.4.112",
+      "checksum": "5d830bca2399"
+    },
+    {
+      "id": "AUD-005",
+      "timestamp": "2026-10-26 11:20:18 UTC",
+      "user": "AI_COPILOT_AGENT",
+      "role": "Label Draft Generator",
+      "action": "STAGED_DRAFT_GENERATION",
+      "target": "LBL-CS100-JP-C10 v2.0-DRAFT",
+      "details": "Auto-staged corrected artwork incorporating STERILE R symbol, synchronized GS1 DataMatrix AI(17) barcode, and formatted 7.5pt Kanji warning block.",
+      "ipAddress": "127.0.0.1 (Local Verified Worker)",
+      "checksum": "21e4a77b69c4"
+    }
+  ]
+}
+

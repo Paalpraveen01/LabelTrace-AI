@@ -1,0 +1,67 @@
+[
+  {
+    "code": "en",
+    "name": "English",
+    "locale": "en-US",
+    "script": "Latin",
+    "direction": "ltr",
+    "validationStatus": "Approved / Certified Native Medical Translation",
+    "phrases": {
+      "sterileEO": "STERILE | EO (Ethylene Oxide)",
+      "sterileR": "STERILE | R (Gamma Irradiation)",
+      "doNotReuse": "Do not re-use / Single use only",
+      "consultIFU": "Consult instructions for use before deployment",
+      "cautionJapanese": "Caution: Federal / National law restricts this device to sale by or on the order of a physician",
+      "warningRestirile": "Do not re-sterilize under any circumstances. Single patient use only."
+    }
+  },
+  {
+    "code": "de",
+    "name": "German",
+    "locale": "de-DE",
+    "script": "Latin",
+    "direction": "ltr",
+    "validationStatus": "Approved / Certified MDR Medical Translation",
+    "phrases": {
+      "sterileEO": "STERIL | EO (Ethylenoxid)",
+      "sterileR": "STERIL | R (Gammastrahlung)",
+      "doNotReuse": "Nicht wiederverwenden / Einmalgebrauch",
+      "consultIFU": "Gebrauchsanweisung beachten",
+      "cautionJapanese": "Vorsicht: Abgabe nur auf ärztliche Verschreibung",
+      "warningRestirile": "Unter keinen Umständen resterilisieren. Nur für den einmaligen Gebrauch am Patienten."
+    }
+  },
+  {
+    "code": "ja",
+    "name": "Japanese",
+    "locale": "ja-JP",
+    "script": "Kanji / Hiragana / Katakana",
+    "direction": "ltr",
+    "validationStatus": "Flagged / Missing Mandatory Caution Notice",
+    "phrases": {
+      "sterileEO": "滅菌済 (エチレンオキサイド)",
+      "sterileR": "滅菌済 (ガンマ線照射)",
+      "doNotReuse": "再使用禁止 (単回使用)",
+      "consultIFU": "添付文書を必ず参照のこと",
+      "cautionJapanese": "注意：医師の指示・処方により使用すること",
+      "warningRestirile": "再滅菌禁止。本品は単回使用医療機器であり、いかなる場合も再滅菌を行ってはならない。"
+    }
+  },
+  {
+    "code": "ar",
+    "name": "Arabic",
+    "locale": "ar-SA",
+    "script": "Arabic",
+    "direction": "rtl",
+    "validationStatus": "Approved / SFDA Certified Translation",
+    "phrases": {
+      "sterileEO": "معقم بأكسيد الإيثيلين",
+      "sterileR": "معقم بأشعة غاما (إشعاع)",
+      "doNotReuse": "مخصص للاستخدام لمرة واحدة فقط - يحظر إعادة الاستخدام",
+      "consultIFU": "راجع تعليمات الاستخدام قبل الفتح",
+      "cautionJapanese": "تحذير: لا يُصرف إلا بأمر من طبيب مرخص",
+      "warningRestirile": "يحظر إعادة التعقيم تحت أي ظرف من الظروف. للاستخدام الفردي لمريض واحد فقط."
+    }
+  }
+]
+
